@@ -1,0 +1,11 @@
+{
+  "name": "design-lens",
+  "version": "1.0.0",
+  "description": "looking at design through the lens of the Torah",
+  "main": "/server/index.js",
+  "scripts": {
+    
+  },
+  "author": "Moshe Bienenfeld, Eliazer Braun",
+  "license": "ISC"
+}
