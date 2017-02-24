@@ -3,7 +3,7 @@ $(function(){
 		$(this).closest("li").find(".preview").slideToggle();
 	});
 
-	$(".hamburger").on("click", function onHaburgerClick() {
+	$(".hamburger-container").on("click", function onHaburgerClick() {
 		$("body").toggleClass("nav-open");
 	});
 });
