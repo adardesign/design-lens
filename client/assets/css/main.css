@@ -17,15 +17,18 @@
 
 nav .name{
 	color: #1ba6dd;
+	font-size: 2rem;
 }
 
 .hamburger{
 	float: right;
 	position: relative;
+	z-index: 2;
 	height: 1.5rem;
 	width: 2rem;
 	border-top:2px solid #1ba6dd;
 	border-bottom:2px solid #1ba6dd;
+	cursor:pointer;
 }
 .hamburger:before{
 	content: "";
@@ -53,6 +56,44 @@ nav .name{
 	text-align: center;
 	margin-top: 145px;
 }
+.commandment{
+	display: none;
+	margin-top: 20px;
+}
+
+.main-nav{
+	display: none;
+}
+.nav-open .main-nav{
+	display: block;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 1;
+	width:100vw;
+	height: 100vh;
+	background-color: #1ba6dd;
+}
+
+.nav-open .hamburger{
+	border-top-color:#fff;
+	border-bottom-color:#fff;
+}
+.nav-open .hamburger:before{
+	border-top-color:#fff;
+}
+
+ .main-nav ul{
+ 	display: block;
+	padding-top: 10%;
+	padding-left:20%;
+ 	font-size: 8rem;
+ }
+ .main-nav li a{
+  	color: #fff;
+ }
+
+
 /*/////////////////////////////////////////////////////// ARROW ////////////////////////////////////////////////////////////*/
 
 
@@ -79,26 +120,29 @@ nav .name{
     border-color: #000 transparent transparent transparent;
 }
 
+.arrow.arrow-small.dark{
+	cursor: pointer;
+}
 
-.arrow.arrow-small{position: relative;}
 .arrow.arrow-small.dark span{
-	overflow: hidden;
+	float: left;
+	margin-top: 5px;
 	position: relative;
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 16px 16px 0 16px;
+	border-width: 12px 12px 0 12px;
 	border-color: #000 transparent transparent transparent;
 }
 .arrow.arrow-small.dark span:before {
     content: "";
     position: absolute;
     z-index: 1;
-    top: -16px;
-    left: -14px;
-    width: 1px;
-    height: 1px;
+	top: -12px;
+    left: -10px;
+    width: 0;
+    height: 0;
     border-style: solid;
-    border-width: 14px 14px 0 14px;
+    border-width: 10px 10px 0 10px;
     border-color: #fff transparent transparent transparent;
 }
