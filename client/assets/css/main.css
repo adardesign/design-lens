@@ -6,10 +6,10 @@ https://jonsuh.com/hamburgers
 
 @font-face {
 	font-family: 'designLab';
-	src:url('./assets/fonts/76c0e477-843c-4647-aeec-bd858af5cd83.eot');
-	src:url('./assets/fonts/e2f8974f-21dc-40ba-bd32-9dae053f30c3.woff2') format('woff2'),
-		url('./assets/fonts/3f647902-d891-4371-a344-8c43c4a325cb.woff') format('woff'),
-		url('./assets/fonts/4698eb6f-2b8e-42b6-86c5-c0b832d69ece.ttf') format('truetype');
+	src:url('/client/assets/fonts/76c0e477-843c-4647-aeec-bd858af5cd83.eot');
+	src:url('/client/assets/fonts/e2f8974f-21dc-40ba-bd32-9dae053f30c3.woff2') format('woff2'),
+		url('/client/assets/fonts/3f647902-d891-4371-a344-8c43c4a325cb.woff') format('woff'),
+		url('/client/assets/fonts/4698eb6f-2b8e-42b6-86c5-c0b832d69ece.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -20,19 +20,17 @@ body {
 }
 
 
-.homepage{
-}
-.homepage .container{
+.container{
 	padding:0;
   width:100%;
 }
-.homepage .page-header{
+.page-header{
 	background: #000;
 	overflow: hidden;
 	margin: 0;
-	padding: 5rem 8rem;
+	padding: 5%;
 }
-.homepage .page-header h1{
+.page-header h1{
 	color:#fff;
 	font-size: 10rem;
 }
@@ -42,7 +40,9 @@ nav .name{
 	font-size: 2rem;
 }
 
-
+.page-content{
+  padding:5%;
+}
 .commandments-container{
 	background: #fff;
 	padding: 5rem;
@@ -56,12 +56,12 @@ nav .name{
 	border-bottom: 1px solid #444;
 }
 
-.homepage .page-header .arrow{
+.page-header .arrow{
 	display: block;
 	text-align: center;
 	margin-top: 145px;
 }
-.commandment{
+.commandment-preview-container{
 	display: none;
 	margin-top: 20px;
 }
@@ -158,7 +158,7 @@ nav .name{
 
 /* Icon 1 */
 
-#nav-icon4 {
+.hamburger {
   width: 25px;
   height: 20px;
   position: relative;
@@ -173,7 +173,7 @@ nav .name{
   cursor: pointer;
 }
 
-#nav-icon4 span {
+.hamburger span {
   display: block;
   position: absolute;
   height: 3px;
@@ -194,10 +194,8 @@ nav .name{
 
 /* Icon 4 */
 
-#nav-icon4 {
-}
 
-#nav-icon4 span:nth-child(1) {
+.hamburger span:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -205,7 +203,7 @@ nav .name{
   transform-origin: left center;
 }
 
-#nav-icon4 span:nth-child(2) {
+.hamburger span:nth-child(2) {
   top: 6px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -213,7 +211,7 @@ nav .name{
   transform-origin: left center;
 }
 
-#nav-icon4 span:nth-child(3) {
+.hamburger span:nth-child(3) {
   top: 12px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -221,7 +219,7 @@ nav .name{
   transform-origin: left center;
 }
 
-.nav-open #nav-icon4 span:nth-child(1) {
+.nav-open .hamburger span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -230,19 +228,64 @@ nav .name{
   left: 7px;
 }
 
-.nav-open #nav-icon4 span{
+.nav-open .hamburger span{
 	background-color: #fff;
 } 
-.nav-open #nav-icon4 span:nth-child(2) {
+.nav-open .hamburger span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
 
-.nav-open #nav-icon4 span:nth-child(3) {
+.nav-open .hamburger span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 15px;
   left: 7px;
+}
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////////commandment///////////////////////////////////////////////////////*/
+.commandment .page-header h1{
+  font-size: 6rem;
+}
+.commandment .page-header h3{
+    font-size: 3rem;
+    color: #aaa;
+}
+.commandment-nav{
+    margin:30px 0 0;
+    text-align: center;
+    font-size: 2rem
+}
+.commandment-nav a{
+    color: #bbb;
+}
+.commandment-nav a.active{
+    position: relative;
+    top:2px;
+    font-size: 2.5rem;
+    font-weight:bold;
+    color: #337ab7;
+}
+.comments-container h4{
+  font-size: 2rem;
+  font-weight:bold;
+}
+.comments-list{
+  margin-top: 30px;
+}
+.comments-list li{
+  margin-bottom: 30px;
+}
+.comments-list .comment-name{
+  font-size: 2rem;
 }
