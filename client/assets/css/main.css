@@ -289,3 +289,6 @@ nav .name{
 .comments-list .comment-name{
   font-size: 2rem;
 }
+.comment-meta h5{
+  font-weight: bold;
+}

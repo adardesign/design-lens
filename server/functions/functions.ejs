@@ -6,7 +6,7 @@ format = {
 		if (!str) {
 			return "";
 		}
-		elips = elips || "";
+		elips = elips === false ? "" : "...";
 		var length = str.length;
 		if (length > max) {
 			return str.substr(0, length + max - length) + elips;
@@ -14,5 +14,4 @@ format = {
 		return str;
 	}
 }
-
 %>

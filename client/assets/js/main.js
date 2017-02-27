@@ -13,17 +13,30 @@ $(function(){
 	});
 
 
-	postComment = function postComment() {
-		fetch('quotes', {
-  			method: 'put',
-  			headers: {'Content-Type': 'application/json'},
-  			body: JSON.stringify({
-    		'name': 'Darth Vader',
-    		'quote': 'I find your lack of faith disturbing.'
-  		})
-	})
+	$(".new-commment").on("submit", function onSubmitCommment(e) {
+		e.preventDefualt();
 
-	}
+		var data = {
+					"sid":1,
+                    "name": "Shia!",
+                    "email": "dsasd@gmail.com",
+                    "date": "Sun Feb 26 2018",
+                    "title": "NEAT!!",
+                    "body": "Very Gut pshat!"
+             	}
+
+             $.ajax({
+             	url:"/postComment",
+             	type:"POST",
+             	data:{i:data},
+				contentType: "application/json",
+             }).then(function onPostComment(data) {
+             	debugger;
+             }).catch(function(err){
+             	debugger;
+             });
+		
+	});
 });
 
 

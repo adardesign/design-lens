@@ -1,0 +1,66 @@
+	<h1>
+		<%=params.id%>. <%=commandment.title%>
+	</h1>
+	<h3><%=commandment.body%></h3>
+	<nav class="commandment-nav">
+		<a href="/commandment/<%=params.id-1%>" class="nav-prev <%=params.id == 1 ? 'disabled' : ''%>"> < </a>
+		<%i = 0; while(i<10){ i++%>
+			<a href="/commandment/<%=i%>" class="nav-num <%=params.id == i ? 'active' : ''%>"> <%=i%> </a>
+		<%}%>
+		<a href="/commandment/<%=Number(params.id)+1%>" class="nav-next <%=params.id == 10 ? 'disabled' : ''%>"> > </a>
+	</nav> 
+</header>
+
+	<div class="page-content comments-container">
+				<h4>Commentary</h4>
+				<form class="form new-commment">
+					<div class="form-group">
+						<label for="name">Title</label>
+						<input type="text" class="form-control" id="title" placeholder="Title" required>			  	
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" rows="5" placeholder="Write your commentary" required></textarea>
+					</div>
+					<div class="form-group row">
+					  <div class="col-md-6">
+						  <label for="name">Name</label>
+						  <input type="text" class="form-control" id="name" placeholder="name" required>			  	
+					  </div>
+					  <div class="col-md-6">
+						  <label for="email">Email</label>
+						  <input type="email" class="form-control" id="email" placeholder="email" required>			  	
+					  </div>
+					</div>
+					<input type="hidden" name="id" value="<%=params.id%>"/>
+					<input type="hidden" name="date" value="<%=(new Date())%>"/>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+				
+<%if(commandment.comments && commandment.comments.length){%>
+				<ul class="comments-list list-unstyled">
+					
+					
+		<%commandment.comments.forEach(function(comment){%>
+			<li class="row">
+						<div class="comment-meta col-md-3">
+							<span class="comment-name"><%=comment.name%></span>
+							<span class="comment-date"><%=comment.date%></span>							
+							<span class="comment-email"><%=comment.email%></span>
+							<h5><%=comment.title%></h5>
+						</div>
+						<div class="comment-body col-md-9">
+							<%=comment.body%>
+						</div>						
+					</li>
+		<%});%>
+		</ul>
+	<%}else{%>
+			Be the first to comment
+	<%}%>
+
+
+
+			</div>
+
+		</div>
+

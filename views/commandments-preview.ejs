@@ -5,28 +5,31 @@
 					<span class="col-md-1"></span>
 				</div>
 				<ul class="commandments-list list-unstyled">
-					<%commandments.forEach(function(commandment){%>
+					<%commandments.forEach(function(commandment, index){%>
 					<li>
 						<div class="commandment-preview-header row">
 							<span class="col-md-4"><%=commandment.title%></span>
-							<span class="col-md-7"><%=format.elipses(commandment.body, 30, true)%></span>
+							<span class="col-md-7"><%=format.elipses(commandment.body, 70, true)%></span>
 							<span class="col-md-1"><div class="arrow arrow-small dark"><span></span></div></span>
 						</div>
 						<div class="commandment-preview-container row">
 							<div class="col-md-4 commandment-preview">
 								<%=format.elipses(commandment.body, 190, true)%>
+								<a href="/commandment/<%=index+1%>">Read more</a>
 							</div>
 							<div class="col-md-7 comment-preview">
 								<%if(commandment.comments && commandment.comments.length){%>
 									<%commandment.comments.forEach(function(comment){%>
 										<%=comment.title%>
-									<%})%>
+										<%=comment.name%>
+										<%=comment.email%>
+										<a href="/commandment/<%=index+1%>#comments">Read more</a>
+									<%});%>
 								<%}else{%>
 									Be the first to comment
 								<%}%>
 							</div>
 							<span class="col-md-1">X</span>
-
 						</div>
 					</li>
 				<%})%>

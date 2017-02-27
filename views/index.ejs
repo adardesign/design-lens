@@ -1,9 +1,14 @@
 <% include ../server/functions/functions %> 
 
 <% include ../partials/header %>
+<% include ../views/header-hero %>
+	
 
-<% include ../views/home-header %>
-<% include ../views/commandments-preview %>
-
+<% if(params && params.id){ %>
+	<% include ../views/commandment-detail %>
+<% } else{ %>
+	<% include ../views/home-header %>
+	<% include ../views/commandments-preview %>
+<%}%>
 
 <% include ../partials/footer %>
