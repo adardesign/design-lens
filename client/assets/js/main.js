@@ -28,7 +28,7 @@ $(function(){
              $.ajax({
              	url:"/postComment",
              	type:"POST",
-             	data:{i:data},
+             	data:{data:data},
 				contentType: "application/json",
              }).then(function onPostComment(data) {
              	debugger;

@@ -19,7 +19,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-
+.disabled{
+  pointer-events: none;
+}
 .container{
 	padding:0;
   width:100%;

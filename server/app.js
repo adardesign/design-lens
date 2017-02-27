@@ -2,23 +2,10 @@ var express = require('express');
 var bodyParser = require('body-parser')
 var app = express();
 
-// parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
-
-// parse application/json
-
-// ... stuff
-var parseJson = bodyParser.json();
-
-app.use(function (req, res, next) {
-    req.getBody = function (callback) {
-        parseJson(req, res,function (err) {
-          callback(err, req.body);
-        });
-    };
-    next();
-});
-
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+app.use(bodyParser.json());
 app.set('view engine', 'ejs')
 
 app.set('port', (process.env.PORT || 5000));
@@ -36,7 +23,7 @@ var db;
 
 MongoClient.connect("mongodb://adardesign:designlensmoshe@ds161099.mlab.com:61099/design-lens", (err, database) => {
     if (err) return console.log(err)
-    db = database
+    db = database;
     app.listen(app.get('port'), () => {
         console.log('listening')
     })
@@ -75,23 +62,29 @@ app.get('/commandment/:id', (req, res) => {
 
 app.post('/postComment', (req, res) => {
     var data = req.body;
-    //return;
+    console.log("-------------------")
+    console.log(data)
+    var sendData = {
+              name: data.name,
+              email: data.email,
+              date: (data.date).slice(0,15),
+              title: data.title,
+              body: data.body
+            };
+
+    console.log(sendData)
+    
     db.collection('commandments').update({
-          appName:"designLens", 
-          'commandments.id': "1" 
-            },
-              {
-                $push: { "commandments.$.comments": 
-                 {
-                    "name": "dd",// data.name,
-                    "email": "ee",//data.email,
-                    "date": "aa", //data.date, // .slice(0,15)
-                    "title": "bbb",//data.title,
-                    "body": "ff"// data.body
-                }
-                     }
+        "_id":"1",
+        appName:"designLens", 
+        'commandments.id': data.id 
+        },
+        {
+          $push: { 
+            "commandments.$": sendData
+        }
      }, function(err,result){
-            if (err) return res.send(err)
-            res.send(data);
+            if (err) return res.send("err")
+            res.send("ok");
       });
 });
