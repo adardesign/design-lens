@@ -68,6 +68,30 @@ nav .name{
 	margin-top: 20px;
 }
 
+.preview-mode .commandments-list li{
+  opacity: 0.4;
+}
+.preview-mode .commandments-list li.preview-shown{
+  opacity: 1;
+}
+.toggle-list{
+  position: relative;
+}
+.toggle-list span{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.commandments-list .toggle-list .close{
+  display: none;
+}
+.commandments-list li.preview-shown .close{
+  display: block;
+}
+.commandments-list li.preview-shown .arrow{
+  display: none;
+}
+
 .main-nav{
 	display: none;
 }
@@ -247,9 +271,48 @@ nav .name{
   left: 7px;
 }
 
-
-
-
+/*small x*/
+.close {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+.close:hover:before, .close:hover::after {
+  background: #000;
+}
+.close:before, .close:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #000;
+}
+.close:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.close:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.close.black:before, .close.black:after {
+  height: 4px;
+  margin-top: 0;
+}
+.close.rounded:before, .close.rounded:after {
+  border-radius: 5px;
+}
 
 
 

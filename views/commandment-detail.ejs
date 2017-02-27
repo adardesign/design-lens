@@ -15,20 +15,20 @@
 				<h4>Commentary</h4>
 				<form class="form new-commment">
 					<div class="form-group">
-						<label for="name">Title</label>
-						<input type="text" class="form-control" id="title" placeholder="Title" required>			  	
+						<label for="title">Title</label>
+						<input type="text" name="title" class="form-control" id="title" placeholder="Title" required>			  	
 					</div>
 					<div class="form-group">
-						<textarea class="form-control" rows="5" placeholder="Write your commentary" required></textarea>
+						<textarea class="form-control" rows="5" name="body" placeholder="Write your commentary" required></textarea>
 					</div>
 					<div class="form-group row">
 					  <div class="col-md-6">
 						  <label for="name">Name</label>
-						  <input type="text" class="form-control" id="name" placeholder="name" required>			  	
+						  <input type="text" class="form-control" name="name" id="name" placeholder="name" required>			  	
 					  </div>
 					  <div class="col-md-6">
 						  <label for="email">Email</label>
-						  <input type="email" class="form-control" id="email" placeholder="email" required>			  	
+						  <input type="email" class="form-control" name="email" id="email" placeholder="email" required>			  	
 					  </div>
 					</div>
 					<input type="hidden" name="id" value="<%=params.id%>"/>

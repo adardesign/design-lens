@@ -10,7 +10,10 @@
 						<div class="commandment-preview-header row">
 							<span class="col-md-4"><%=commandment.title%></span>
 							<span class="col-md-7"><%=format.elipses(commandment.body, 70, true)%></span>
-							<span class="col-md-1"><div class="arrow arrow-small dark"><span></span></div></span>
+							<div class="toggle-list col-md-1">
+								<span class="arrow arrow-small dark"><span></span></span>
+								<span class="close black"></span>
+							</div>
 						</div>
 						<div class="commandment-preview-container row">
 							<div class="col-md-4 commandment-preview">
@@ -29,7 +32,7 @@
 									Be the first to comment
 								<%}%>
 							</div>
-							<span class="col-md-1">X</span>
+							<span class="col-md-1"> </span>
 						</div>
 					</li>
 				<%})%>

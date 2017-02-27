@@ -62,8 +62,6 @@ app.get('/commandment/:id', (req, res) => {
 
 app.post('/postComment', (req, res) => {
     var data = req.body;
-    console.log("-------------------")
-    console.log(data)
     var sendData = {
               name: data.name,
               email: data.email,
@@ -72,19 +70,17 @@ app.post('/postComment', (req, res) => {
               body: data.body
             };
 
-    console.log(sendData)
     
     db.collection('commandments').update({
-        "_id":"1",
-        appName:"designLens", 
-        'commandments.id': data.id 
+          "_id":"collection1",
+          'commandments.id': "commandments_"+data.id,
         },
         {
           $push: { 
-            "commandments.$": sendData
+            "commandments.$.comments": sendData
         }
-     }, function(err,result){
+     }, (err, result) => {
             if (err) return res.send("err")
-            res.send("ok");
+            res.send(sendData);
       });
 });
