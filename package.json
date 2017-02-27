@@ -4,7 +4,7 @@
   "description": "looking at design through the lens of the Torah",
   "main": "/server/index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server/app.js"
   },
   "author": "Moshe Bienenfeld, Eliazer Braun",
   "license": "ISC",
