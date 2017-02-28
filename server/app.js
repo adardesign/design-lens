@@ -21,7 +21,7 @@ var MongoClient = require('mongodb').MongoClient;
 var db;
 
 
-MongoClient.connect("mongodb://adardesign:designlensmoshe@ds161099.mlab.com:61099/design-lens", (err, database) => {
+MongoClient.connect("mongodb://"+process.env.MONGODBUSER+":"+process.env.MONGODBPASS+"@ds161099.mlab.com:61099/design-lens", (err, database) => {
     if (err) return console.log(err)
     db = database;
     app.listen(app.get('port'), () => {
