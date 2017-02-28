@@ -1,12 +1,87 @@
 {
+    "_id": "collection1",
+    "appName": "designLens",
     "commandments": [
         {
+            "id": "commandments_1",
             "title": "An eye for an eye",
-            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d"
+            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
+            "comments": []
         },
         {
+            "id": "commandments_2",
             "title": "Thou shalt not kill",
-            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d"
+            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
+            "comments": [
+                {
+                    "name": "Eliazer Braun",
+                    "email": "adardesign@gmail.com",
+                    "date": "Mon Feb 27 2017",
+                    "title": "Great Idea",
+                    "body": "I really love it, ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d\n"
+                },
+                {
+                    "name": "Moshe Bienenfeld",
+                    "email": "moshebien@gmail.com",
+                    "date": "Mon Feb 27 2017",
+                    "title": "I disagree",
+                    "body": "Loconsequat. Duis aute irure deru."
+                }
+            ]
+        },
+        {
+            "id": "commandments_3",
+            "title": "Thou shalt not kill",
+            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
+            "comments": []
+        },
+        {
+            "id": "commandments_3",
+            "title": "Thou shalt not kill",
+            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
+            "comments": []
+        },
+        {
+            "id": "commandments_4",
+            "title": "Thou shalt not kill",
+            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
+            "comments": []
+        },
+        {
+            "id": "commandments_4",
+            "title": "Thou shalt not kill",
+            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
+            "comments": []
+        },
+        {
+            "id": "commandments_6",
+            "title": "Thou shalt not kill",
+            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
+            "comments": []
+        },
+        {
+            "id": "commandments_7",
+            "title": "Thou shalt not kill",
+            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
+            "comments": []
+        },
+        {
+            "id": "commandments_8",
+            "title": "Thou shalt not kill",
+            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
+            "comments": []
+        },
+        {
+            "id": "commandments_9",
+            "title": "Thou shalt not kill",
+            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
+            "comments": []
+        },
+        {
+            "id": "commandments_10",
+            "title": "Thou shalt not kill",
+            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
+            "comments": []
         }
     ]
 }
