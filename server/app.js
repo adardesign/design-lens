@@ -20,8 +20,9 @@ app.use('/client', express.static(__dirname + '/../client/'));
 var MongoClient = require('mongodb').MongoClient;
 var db;
 
-
-MongoClient.connect("mongodb://"+process.env.MONGODBUSER+":"+process.env.MONGODBPASS+"@ds161099.mlab.com:61099/design-lens", (err, database) => {
+const MONGODBUSER =  process.env.MONGODBUSER;
+const MONGODBPASS = process.env.MONGODBPASS
+MongoClient.connect("mongodb://"+MONGODBUSER+":"+MONGODBPASS+"@ds161099.mlab.com:61099/design-lens", (err, database) => {
     if (err) return console.log(err)
     db = database;
     app.listen(app.get('port'), () => {
