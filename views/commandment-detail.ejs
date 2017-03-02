@@ -5,7 +5,7 @@
 	<nav class="commandment-nav">
 		<a href="/commandment/<%=params.id-1%>" class="nav-prev <%=params.id == 1 ? 'disabled' : ''%>"> < </a>
 		<%i = 0; while(i<10){ i++%>
-			<a href="/commandment/<%=i%>" class="nav-num <%=params.id == i ? 'active' : ''%>"> <%=i%> </a>
+			<a href="/commandment/<%=i%>" class="nav-num <%=params.id == i ? 'active' : ''%>"> . </a>
 		<%}%>
 		<a href="/commandment/<%=Number(params.id)+1%>" class="nav-next <%=params.id == 10 ? 'disabled' : ''%>"> > </a>
 	</nav> 
@@ -43,12 +43,19 @@
 		<%commandment.comments.forEach(function(comment){%>
 			<li class="row">
 						<div class="comment-meta col-md-3">
-							<span class="comment-name"><%=comment.name%></span>
+							<span class="comment-name">
+								<%if(comment.email){%>
+									<a href="mailto:<%=comment.email%>">
+								<%}%>
+									<%=comment.name%>
+								<%if(comment.email){%>
+									</a>
+								<%}%>
+							</span>
 							<span class="comment-date"><%=comment.date%></span>							
-							<span class="comment-email"><%=comment.email%></span>
-							<h5><%=comment.title%></h5>
 						</div>
 						<div class="comment-body col-md-9">
+							<h5><%=comment.title%></h5>
 							<%=comment.body%>
 						</div>						
 					</li>

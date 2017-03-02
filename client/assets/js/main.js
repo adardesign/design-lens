@@ -1,5 +1,5 @@
 $(function(){
-	$(".commandments-list").on("click", ".toggle-list", function toggle() {
+	$(".commandments-list").on("click", ".commandment-preview-header", function toggle() {
 		var jThis = $(this),
 			li = jThis.closest("li"),
 			shownClass = "preview-shown";

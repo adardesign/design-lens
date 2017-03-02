@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser')
 var app = express();
+var fs = require('fs') 
 
 app.use(bodyParser.urlencoded({
     extended: true
@@ -11,7 +12,6 @@ app.set('view engine', 'ejs')
 app.set('port', (process.env.PORT || 5000));
 //app.use(express.static(__dirname + '/../client/'));
 app.use('/client', express.static(__dirname + '/../client/'));
-
 //app.listen(app.get('port'), function() {
 //  console.log('Node app is running on port', app.get('port'));
 //});
@@ -19,11 +19,19 @@ app.use('/client', express.static(__dirname + '/../client/'));
 
 var MongoClient = require('mongodb').MongoClient;
 var db;
+var offline = false;
 
 const MONGODBUSER =  process.env.MONGODBUSER;
 const MONGODBPASS = process.env.MONGODBPASS
 MongoClient.connect("mongodb://"+MONGODBUSER+":"+MONGODBPASS+"@ds161099.mlab.com:61099/design-lens", (err, database) => {
-    if (err) return console.log(err)
+    if (err) {
+        // support offline, or local BU DB
+        app.listen(app.get('port'), () => {
+          offline = true;
+          console.log('listening offline mode');
+        });
+        return;
+    }
     db = database;
     app.listen(app.get('port'), () => {
         console.log('listening')
@@ -32,6 +40,18 @@ MongoClient.connect("mongodb://"+MONGODBUSER+":"+MONGODBPASS+"@ds161099.mlab.com
 
 
 app.get('/', (req, res) => {
+    if(offline){
+      fs.readFile('./data/commandments.json', 'utf8', (err, result) => {
+        if (err) return console.log(err);
+         result = JSON.parse(result);
+         res.render('../views/index.ejs', {
+            commandments: result.commandments,
+            params: req.params,
+            pageType: "home"
+        });
+      });    
+      return;
+    }
     db.collection('commandments').find().toArray((err, result) => {
         if (err) return console.log(err)
         // renders index.ejs
@@ -44,7 +64,20 @@ app.get('/', (req, res) => {
 });
 
 app.get('/commandment/:id', (req, res) => {
-    var id = req.params.id;
+  var id = req.params.id;
+  if(offline){
+      fs.readFile('./data/commandments.json', 'utf8', (err, result) => {
+        if (err) return console.log(err);
+         result = JSON.parse(result);
+         res.render('../views/index.ejs', {
+            commandment: result.commandments[id - 1],
+            params: req.params,
+            pageType: "commandment"
+
+        })
+      });    
+      return;
+    }
     db.collection('commandments').find().toArray((err, result) => {
         if (err) return console.log(err)
         console.log(result[0].commandments[id - 1]);
