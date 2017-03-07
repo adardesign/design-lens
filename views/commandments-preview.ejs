@@ -1,26 +1,26 @@
 <div class="page-content commandments-container">
 				<div class="commandments-header row">
-					<span class="col-md-4">Commandments</span>
-					<span class="col-md-7">Top Commentary</span>
+					<span class="col-md-5">Commandments</span>
+					<span class="col-md-6">Top Commentary</span>
 					<span class="col-md-1"></span>
 				</div>
 				<ul class="commandments-list list-unstyled">
 					<%commandments.forEach(function(commandment, index){%>
 					<li>
 						<div class="commandment-preview-header row">
-							<span class="col-md-4"><%=commandment.title%></span>
-							<span class="col-md-7"><%=format.elipses(commandment.body, 70, true)%></span>
+							<span class="col-md-5"><strong><%=commandment.title%></strong></span>
+							<span class="col-md-6"><%=format.elipses(commandment.body, 70, true)%></span>
 							<div class="toggle-list col-md-1">
 								<span class="arrow arrow-small dark"><span></span></span>
 								<span class="close black"></span>
 							</div>
 						</div>
 						<div class="commandment-preview-container row">
-							<div class="col-md-4 commandment-preview">
+							<div class="col-md-5 commandment-preview">
 								<%=format.elipses(commandment.body, 190, true)%>
 								<a href="/commandment/<%=index+1%>">Read more</a>
 							</div>
-							<div class="col-md-7 comment-preview">
+							<div class="col-md-6 comment-preview">
 								<%if(commandment.comments && commandment.comments.length){%>
 									<%commandment.comments.forEach(function(comment){%>
 										<%=comment.title%>
