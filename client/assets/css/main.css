@@ -34,7 +34,7 @@ body {
 }
 .page-header h1{
 	color:#fff;
-	font-size: 10rem;
+	font-size: 112px;
 }
 
 nav .name{
@@ -358,3 +358,4 @@ nav .name{
 .comment-meta h5{
   font-weight: bold;
 }
+ 
