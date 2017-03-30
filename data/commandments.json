@@ -1,87 +1,66 @@
 {
-    "_id": "collection1",
-    "appName": "designLens",
-    "commandments": [
-        {
-            "id": "commandments_1",
-            "title": "An eye for an eye",
-            "body": "in sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
-            "comments": []
-        },
-        {
-            "id": "commandments_2",
-            "title": "Thou shalt not kill",
-            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
-            "comments": [
-                {
-                    "name": "Eliazer Braun",
-                    "email": "adardesign@gmail.com",
-                    "date": "Mon Feb 27 2017",
-                    "title": "Great Idea",
-                    "body": "I really love it, ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d\n"
-                },
-                {
-                    "name": "Moshe Bienenfeld",
-                    "email": "moshebien@gmail.com",
-                    "date": "Mon Feb 27 2017",
-                    "title": "I disagree",
-                    "body": "Loconsequat. Duis aute irure deru."
-                }
-            ]
-        },
-        {
-            "id": "commandments_3",
-            "title": "Thou shalt not kill",
-            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
-            "comments": []
-        },
-        {
-            "id": "commandments_3",
-            "title": "Thou shalt not kill",
-            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
-            "comments": []
-        },
-        {
-            "id": "commandments_4",
-            "title": "Thou shalt not kill",
-            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
-            "comments": []
-        },
-        {
-            "id": "commandments_4",
-            "title": "Thou shalt not kill",
-            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
-            "comments": []
-        },
-        {
-            "id": "commandments_6",
-            "title": "Thou shalt not kill",
-            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
-            "comments": []
-        },
-        {
-            "id": "commandments_7",
-            "title": "Thou shalt not kill",
-            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
-            "comments": []
-        },
-        {
-            "id": "commandments_8",
-            "title": "Thou shalt not kill",
-            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
-            "comments": []
-        },
-        {
-            "id": "commandments_9",
-            "title": "Thou shalt not kill",
-            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
-            "comments": []
-        },
-        {
-            "id": "commandments_10",
-            "title": "Thou shalt not kill",
-            "body": "ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure d",
-            "comments": []
-        }
-    ]
+  "_id": "collection1",
+  "appName": "designLens",
+  "commandments": [
+    {
+      "id": "commandments_1",
+      "title": "An eye for an eye",
+      "body": "<p>The design application from this famous biblical phrase is simple; balance. Everything in life has accountability, which creates a certain standard and balance. For designers, this principle is essential. Design must have a visual balance. Balance does not require symmetry, but rather an open mind of accountability. Just as one is required to repay the monetary damages to his friend when damaging his or hers property to “even the score”, so too designers must “even the score” of their design aesthetics. Be it with symmetrical or asymmetrical balance, always remember there is a larger score that mustn’t be ignored.</p><p><strong>The source:</strong> This verse (“an eye for an eye”) which is written twice in the Torah, once in the portion of Mishpatim and the other in Emor, is not taken literally. It is clear from the Talmud in tractate Bava Kamma that this term was always known to mean, as the Oral Law explains it, that the responsible party must pay the monetary value for an eye, in restitution for the eye that he had blinded.</p>",
+      "comments": []
+    },
+    {
+      "id": "commandments_2",
+      "title": "Be Fruitful and Multiply",
+      "body": "<p>Within each concept and design lives a mass of potential. Take your most basic, stripped-down concept, the original, and expand it. Push it forward, make several versions of it, see what works and what isn’t working. Consider all options and specifications and use them to create an array of designs from the original.</p><p>Another variable to this rule is repetition. Often there is an element of design that just works. Do it again. And again. And again. Create repetition throughout and in your designs. Layer on top of layer. Whether it’s repeating the same steps they got you to that point or actually repeating the same design element somewhere else in your design, repetition works.</p><p><strong>The source:</strong> The very first mitzvah (commandment) in the Torah is “to be fruitful and multiply.” As the verse in Genesis states: “And G‑d said to them, ‘Be fruitful and multiply and fill the earth…’” After the Flood, G‑d repeated this commandment to Noah, to “fill the earth.” This mitzvah of having children is considered a “great mitzvah” and in some cases even overrides certain other laws. The most common and basic understanding of this is that the minimum requirement of this mitzvah is to have a son and a daughter.</p>",
+      "comments": []
+    },
+    {
+      "id": "commandments_3",
+      "title": "Right > Left",
+      "body": "<p>Often there are times in the layout and design when you are unsure if things should be on the left or the right. Do I left aligned this paragraph or right? Does the balance lean to the left or lean to the right? When you have a fork in the road and you’re unsure — always choose the right. Whatever the case may be, lean right. That’s the direction which is valued more.</p><p><strong>The source:</strong> Although this isn’t a specific verse in the Torah, the Talmud in several places talks about the importance of the right direction. For starters, the Hebrew language is read from left to right. When performing a mitzvah, (commandment /good deed) one is required to hold the object of the commandment in his/her right hand. When opening the Ark in the synagogue, one should open the curtain/door form left to right. Many of these customs are based off the idea rooted in the Talmud of “maaleh b’kodesh,” literally translated as “to rise in holiness.</p>",
+      "comments": []
+    },
+    {
+      "id": "commandments_4",
+      "title": "Be “Osek”, Involved and Engaged",
+      "body": "<p>When you live and breathe design your outcomes are all that much more meaningful and the solutions are more successful. Live a life of design means to toil in the field design. Don’t be a robot by carrying out tasks but rather feel design living inside of you. Seek out good designs and designers, intellectually and physically. Go to seminars, join art and design clubs, read books and involve yourself more in the design community. By living with design as a part of you all day, you are putting yourself in a position to already have an advantage and the upper hand before you even pick up a pen.</p><p><strong>The source:</strong> G-d speaks to the Jewish people in the beginning of the portion Bechukosai and says, “If you follow my decrees,…” Rashi, the super-commentator explains this verse to mean there is a commandment in the Torah to be “Osek” (engaged, and involved) in Torah. The torah wants this to be a lifestyle, not just intellectual engaged in Torah, but physically as well. This has to become your life. (So much so, we have a precedent in Talmud of “Osek ba’mitzvah, patur min ha’mitzvah” — If you are in the midst of performing one commandment and anther mitzvah opportunity arises, you can not divert to the new one.)</p>",
+      "comments": []
+    },
+    {
+      "id": "commandments_5",
+      "title": "Elevate the Mundane",
+      "body": "<p>Find a way to take the simplest, most elementary thing and add a layer and aspect of design. Look and analyze the details and small things that currently go over-looked in your designs. Try to find a way to elevate, give more meeting, give more power to, these elements in your design. By doing so this will enhance and upgrade your design as a whole gestalt. Challenge yourself to find unique ways to elevate and expand on the small details that we are so commonly used to doing in our designs, the reward will speak for itself.</p> <p><strong>The source:</strong> The Torah states in the portion of Kedoshim (which means “holy”), “You should make yourself holy.” Simply understood to mean by doing the mitzvahs that G‑d commands. Commentaries explains this to mean this concept of honing in on the everyday details to heighten your actions. For instance, when you say good morning to someone, focus on the fact that you are giving that person a blessing. If someone asks you to pass the salt, realize you are doing an act of kindness. Taking these seemingly mundane acts and raising them into mitzvahs and focusing in this way will increase your level of joy, and your desire to do more good deeds. Take the simplest thing, and make it holy.</p>",
+      "comments": []
+    },
+    {
+      "id": "commandments_6",
+      "title": "Intent",
+      "body": "<p>When you sketch, draw or begin to brainstorm go in with the proper mindset and intent. Design with active knowledge of what your are trying to overcome, or solve. When you start story-boarding, thumb-nailing or even taking a picture, make sure to have the right kavanah, intention. By approaching your project with the proper mindset you are guaranteed to yield better graphic results every time. This is not to say that you can’t achieve satisfying results without the right intention, but with the proper intention the sky is the limit.</p><p><strong>The source:</strong> The Talmud in the tractate Megillah when discussing the laws of reciting the daily prayers explains that it is not enough to just have these words and prayers simply just be heard but rather internalized and understood by the one who is praying. From here, and other various sources the principle of kavanah is demonstrated. Kavanah, intense mental concentration and direct intention is central to the prayer experience as well as other mitzvahs.</p>",
+      "comments": []
+    },
+    {
+      "id": "commandments_7",
+      "title": "Rules Make it Fun",
+      "body": "<p>Limit yourself. Take away the options. Constrain yourself to use to one tool, one color, one method, one process. Restrict yourself. This will help you find a better and probably a more creative solution than when you had every choice, opportunity and option wide open. Without rules, there is no fun in playing the game. Working under these conditions may just help you more than you think.</p><p><strong>The source:</strong> Pirkei Avot (Ethics of the Fathers) is unique in that it is the only tractate of the Mishnah dealing solely with ethical and moral principles; there is little or no halacha (laws) found in Pirkei Avot. The Mishnah there in Perkei Avot states “Ein ben chorin ella mi sh’osek batorah” — “There isn’t a free man other than one who toils in the laws of the Torah”. One understanding of this is precisely this idea of when having boundaries, rules and guidelines this is the exact tool that creates freedom. The rules themselves make it free, fun and enjoyable.</p>",
+      "comments": []
+    },
+    {
+      "id": "commandments_8",
+      "title": "Do Not Steal",
+      "body": "<p>When working on a team or collaborating with others to achieve one goal or design, we often “rob” people of their creativity or ideas by shutting them down or overriding them. Be open to hearing new ideas, and listening to your fellow artists input and direction. When it comes to design it is tough to categorize and define stealing. We all are inspired and influenced by other people’s work, but the one thing we can all agree on is not to rob others of their creativity.</p><p><strong>The source:</strong> You can’t get any more direct than this. The source of this prohibition is G-d’s statement in the Ten Commandments, “You may not steal.” This is the 8th of the Ten Commandments given to the Jewish people at Mt. Sinai. Many other laws are derived and learned from these two Hebrew words of “Lo Signov” (do not steal). The Talmud in tractate Sanhedrin cites this commandment as a source for the prohibition of kidnapping. Which essentially is stealing people.</p>",
+      "comments": []
+    },
+    {
+      "id": "commandments_9",
+      "title": "Go Blue, Techeilet",
+      "body": "<p>There is one color in Judaism that carries more weight than others and that is the color blue. When working with your more important works and design try adding in a splash of blue (or turquoise) to give you work a priestly, regal and holy aesthetic. </p><p><strong>The source:</strong> There are several verses in the Torah that speak about “techeilet”, this special type of color blue that came from a sea shell. This color was used for the holy Priest and worn by only him in Biblical times. </p>",
+      "comments": []
+    },
+    {
+      "id": "commandments_10",
+      "title": "Repentance",
+      "body": "<p>As designers we have to always reflect and revisit the work we’ve done and look at it with fresh eyes. We must realize our mistakes and rectify them and how not to commit those same mistakes in the future. Often looking at older work, whether you like it or absolutely hate it can help you work through in new design solution. </p><p><strong>The source:</strong> Nachmanides, a great rabbi and commentator from Spain explains the verse in the Torah (from the portion of Netzavim) that there is an actual Biblical commandment to repent. The word “vshav” in Hebrew means to return. </p>",
+      "comments": []
+    }
+  ]
 }

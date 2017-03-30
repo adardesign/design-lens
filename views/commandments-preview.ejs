@@ -8,8 +8,8 @@
 					<%commandments.forEach(function(commandment, index){%>
 					<li>
 						<div class="commandment-preview-header row">
-							<span class="col-md-5"><strong><%=commandment.title%></strong></span>
-							<span class="col-md-6"><%=format.elipses(commandment.body, 70, true)%></span>
+							<span class="col-md-4"><%=commandment.title%></span>
+							<span class="col-md-7"><%-format.elipses(commandment.body, 70, true)%></span>
 							<div class="toggle-list col-md-1">
 								<span class="arrow arrow-small dark"><span></span></span>
 								<span class="close black"></span>
@@ -17,7 +17,7 @@
 						</div>
 						<div class="commandment-preview-container row">
 							<div class="col-md-5 commandment-preview">
-								<%=format.elipses(commandment.body, 190, true)%>
+								<%-format.elipses(commandment.body, 190, true)%>
 								<a href="/commandment/<%=index+1%>">Read more</a>
 							</div>
 							<div class="col-md-6 comment-preview">
