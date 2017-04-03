@@ -3,11 +3,11 @@
 	</h1>
 	<h3><%-commandment.body%></h3>
 	<nav class="commandment-nav">
-		<a href="/commandment/<%=params.id-1%>" class="nav-prev <%=params.id == 1 ? 'disabled' : ''%>"> < </a>
+		<a href="/commandment/<%=params.id-1%>" class="nav-prev <%=params.id == 1 ? 'disabled' : ''%>"> &#8249; </a>
 		<%i = 0; while(i<10){ i++%>
-			<a href="/commandment/<%=i%>" class="nav-num <%=params.id == i ? 'active' : ''%>"> . </a>
+			<a href="/commandment/<%=i%>" class="nav-num <%=params.id == i ? 'active' : ''%>"> &bull; </a>
 		<%}%>
-		<a href="/commandment/<%=Number(params.id)+1%>" class="nav-next <%=params.id == 10 ? 'disabled' : ''%>"> > </a>
+		<a href="/commandment/<%=Number(params.id)+1%>" class="nav-next <%=params.id == 10 ? 'disabled' : ''%>"> &#8250; </a>
 	</nav> 
 </header>
 
