@@ -7,38 +7,11 @@
 				<ul class="commandments-list list-unstyled">
 					<%commandments.forEach(function(commandment, index){%>
 					<li>
-						<a href="/commandment/<%=commandment.id-1%>" class="commandment-preview-header row">
-							<span class="commandment-count col-md-1"><%=commandment.id%>.</span>
+						<a href="/commandment/<%=index+1%>" class="commandment-preview-header row">
+							<span class="commandment-count col-md-1"><%=index+1%>.</span>
 							<span class="col-md-5"><%=commandment.title%></span>
 							<span class="col-md-6"><%-format.elipses(commandment.body, 70, true)%></span>
-/*
-							<div class="toggle-list col-md-1">
-								<span class="arrow arrow-small dark"><span></span></span>
-								<span class="close black"></span>
-							</div>
-*/
 						</a>
-/*
-						<div class="commandment-preview-container row">
-							<div class="col-md-5 commandment-preview">
-								<%-format.elipses(commandment.body, 190, true)%>
-								<a href="/commandment/<%=index+1%>">Read more</a>
-							</div>
-							<div class="col-md-6 comment-preview">
-								<%if(commandment.comments && commandment.comments.length){%>
-									<%commandment.comments.forEach(function(comment){%>
-										<%=comment.title%>
-										<%=comment.name%>
-										<%=comment.email%>
-										<a href="/commandment/<%=index+1%>#comments">Read more</a>
-									<%});%>
-								<%}else{%>
-									Be the first to comment
-								<%}%>
-							</div>
-							<span class="col-md-1"> </span>
-						</div>
-*/
 					</li>
 				<%})%>
 </ul>
