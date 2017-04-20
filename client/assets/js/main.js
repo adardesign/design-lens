@@ -1,4 +1,5 @@
 $(function(){
+/*
 	$(".commandments-list").on("click", ".commandment-preview-header", function toggle() {
 		var jThis = $(this),
 			li = jThis.closest("li"),
@@ -9,6 +10,7 @@ $(function(){
 		$("body").toggleClass("preview-mode", $(".preview-shown").length);
 
 	});
+*/
 
 	$(".hamburger-container").on("click", function onHaburgerClick() {
 		$("body").toggleClass("nav-open");

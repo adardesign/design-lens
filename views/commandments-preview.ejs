@@ -7,14 +7,18 @@
 				<ul class="commandments-list list-unstyled">
 					<%commandments.forEach(function(commandment, index){%>
 					<li>
-						<div class="commandment-preview-header row">
+						<a href="/commandment/<%=commandment.id-1%>" class="commandment-preview-header row">
+							<span class="commandment-count col-md-1"><%=commandment.id%>.</span>
 							<span class="col-md-5"><%=commandment.title%></span>
 							<span class="col-md-6"><%-format.elipses(commandment.body, 70, true)%></span>
+/*
 							<div class="toggle-list col-md-1">
 								<span class="arrow arrow-small dark"><span></span></span>
 								<span class="close black"></span>
 							</div>
-						</div>
+*/
+						</a>
+/*
 						<div class="commandment-preview-container row">
 							<div class="col-md-5 commandment-preview">
 								<%-format.elipses(commandment.body, 190, true)%>
@@ -34,6 +38,7 @@
 							</div>
 							<span class="col-md-1"> </span>
 						</div>
+*/
 					</li>
 				<%})%>
 </ul>
