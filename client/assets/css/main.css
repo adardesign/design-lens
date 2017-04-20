@@ -348,7 +348,7 @@ nav .name{
 }
 .commandment .page-header h3 p {margin-bottom: 1em;}
 .commandment-nav{
-    margin:4em 0 0;
+    margin:4em auto 0;
     text-align: center;
 }
 .commandment-nav a{
@@ -377,6 +377,13 @@ nav .name{
 .comments-container h4{
   font-size: 2rem;
   font-weight:bold;
+  text-align: center;
+}
+form.new-commment {
+	max-width: 720px;
+	background: #f1f1f4;
+	padding: 30px 42px;
+	margin-bottom: 36px;
 }
 .comments-list{
   margin-top: 30px;
@@ -390,4 +397,9 @@ nav .name{
 .comment-meta h5{
   font-weight: bold;
 }
- 
+.comment-date {
+	display:block;
+} 
+.comment-body h5 {
+	font-weight:700;
+}
