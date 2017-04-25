@@ -415,7 +415,8 @@ nav .name{
 }
 
 .comments-container h4{
-  font-size: 2rem;
+  font-size: 4rem;
+  margin-bottom: 1em;
   font-weight:bold;
   text-align: center;
 }
@@ -423,10 +424,16 @@ form.new-commment {
 	max-width: 720px;
 	background: #f1f1f4;
 	padding: 30px 42px;
-	margin-bottom: 36px;
+	margin-bottom: 60px;
+	transition: background 1200ms ease 600ms;
+}
+form.new-commment.attention {
+	background: #9ed0e4;
+	transition: background 620ms ease 480ms;
 }
 .comments-list{
   margin-top: 30px;
+  max-width: 1100px;
 }
 .comments-list li{
   margin-bottom: 30px;
