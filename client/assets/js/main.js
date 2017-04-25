@@ -50,6 +50,20 @@ $(function(){
              });
 		
 	});
+	
+	
+	 $(".scrollto-comment").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#commentary").offset().top
+    }, 420);
+    $('#commentary').addClass('attention');
+    setTimeout(function () { 
+      $('#commentary').removeClass('attention');
+			$('.scrollto-comment').hide();
+    }, 1800);
+  });
+  
+	
 });
 
 

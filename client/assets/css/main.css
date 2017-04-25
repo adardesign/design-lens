@@ -133,6 +133,46 @@ nav .name{
  .main-nav li a{
   	color: #fff;
  }
+ 
+ 
+.scrollto-comment {
+	background: #1ba6dd;
+	position: absolute;
+	right: 3vw;
+	top: 30vh;
+	color: #fff;
+	text-transform: uppercase;
+	width: 110px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 0.75em;
+	padding: 6px 12px 18px;
+	animation: fadein 2s ease-in;
+	cursor: pointer;
+	transition: all 180ms ease;
+}
+.scrollto-comment:hover {
+	text-decoration: none;
+	background: #fff;
+	color: #1ba6dd;
+}
+.scrollto-comment span {
+	display: block;
+	font-size: 6rem;
+	margin-bottom: 12px;
+	font-weight: 100;
+}
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 
 /*/////////////////////////////////////////////////////// ARROW ////////////////////////////////////////////////////////////*/
